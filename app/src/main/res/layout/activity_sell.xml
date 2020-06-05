@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mc"
+    tools:context=".SELL">
+
+
+    <Button
+        android:id="@+id/sell_books"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="262dp"
+        android:layout_height="66dp"
+
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="344dp"
+        android:background="#F1EEEE"
+        android:text="books,notes and question papers"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="323dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="200dp"
+        android:requiresFadingEdge="none"
+        android:text="What Do You Want To Sell?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ECE4E4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/sell_others"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <Button
+        android:id="@+id/sell_others"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="262dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="206dp"
+        android:background="#F1EEEE"
+        android:text="Other Essentials"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

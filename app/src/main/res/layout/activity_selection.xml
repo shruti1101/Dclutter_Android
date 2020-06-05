@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mc"
+    tools:context=".selection">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="171dp"
+        android:text="SELECT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F5ECEC"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/btn_buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="302dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="78dp"
+        android:requiresFadingEdge="none"
+        android:text="what do you wish to do?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F5ECEC"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sell"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="132dp"
+        android:text="SELL"
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+
+        android:text="BUY"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
